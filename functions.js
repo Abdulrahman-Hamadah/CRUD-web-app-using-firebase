@@ -1,33 +1,23 @@
 
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+ ////////////////////////////////////////////////////////////////////////////CONFIG SECTION////////////////////////////////////////////////////////////////////////////
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyCvaow1zRXI6jED3stqaOv-VQKk1Aih9kM",
-    authDomain: "workshop-79337.firebaseapp.com",
-    projectId: "workshop-79337",
-    storageBucket: "workshop-79337.appspot.com",
-    messagingSenderId: "50739537771",
-    appId: "1:50739537771:web:cf00446210e695cb7b8e2e",
-    measurementId: "G-QQ4VPT6FWB"
-  };
+// in firebase website, go to project setting > choose your web app > under the "SDK setup and configuration" section choose CDN and copy the code and paste it here
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
 
+
+
+
+
+
+
+// we will also import other stuff to make our CRUD web app work.
   import {getDatabase, ref, get, set, child, update, remove}
   from "https://www.gstatic.com/firebasejs/9.12.1/firebase-database.js";
 
   const db = getDatabase();
 
 
-  //-------------------------------------refrences--------------------------------
+//////////////////////////////////////////////////////////////////////////REFERENCES SECTION///////////////////////////////////////////////////////////////////////////
 
 var Namebox = document.getElementById("Namebox");
 
@@ -46,7 +36,8 @@ var Updbtn = document.getElementById("Updbtn");
 
 var Delbtn = document.getElementById("Delbtn");
 
-// ----------------------------------functions----------------------------------------
+//////////////////////////////////////////////////////////////////////////                 
+
 
 
 // insert function
